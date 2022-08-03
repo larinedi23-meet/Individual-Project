@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+  <script src="./static/js/js.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>HOME</title>
+    <link href="./static/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <center>
+     <div class="navbar-s">
+          <a href=""></a>
+
+  <a href="/home">HOME</a>
+  <a href="/add_story">ADD A STORY</a>
+    <a href="/my_stories">MY STORIES</a>
+<!--       <a href="NA.html"></a> -->
+      <a href="/signout">LOGOUT</a>
+  </center>
+
+<br>
+<div class="slideshow-container">
+
+    {% for i in stories %}
+
+<div class="mySlides">
+    <h1>{{stories[i]['title']}}</h1>
+  <h3>{{stories[i]['story']}}</h3>
+</div>
+
+{% endfor %}
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+    
+
+    
+</body>
+</html>

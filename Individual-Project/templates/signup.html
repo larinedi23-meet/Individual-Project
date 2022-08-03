@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+        <link href="./static/css/style2.css" rel="stylesheet" type="text/css" />
+    <script src="./static/js/js.js"></script>
+</head>
+<body>
+    <form method="post" action="/signup">
+        <header>
+        <h1>welcome to WritingBurst</h1>
+    </header>
+    <main>
+        <form id="login_form" class="form_class" action="login/login-access.php" method="post">
+            <div class="form_div">
+                <label>sign up:</label>
+                <input class="field_class" name="email" type="text" id="emailStr" placeholder="please enter your your email" autofocus>
+                <label>Username</label>
+                <input class="field_class" name="username" type="text" id="usernameStr" placeholder="please enter your your username" autofocus>
+                <label>Password:</label>
+                <input id="pass" class="field_class" name="password" type="password" placeholder="please enter your password">
+                <input  class="submit_class" type="submit" value="CREATE ACCOUNT" />
+                <!-- <button class="submit_class" type="submit" form="login_form" onclick="return validarLogin()">ENTER</button> -->
+            </div>
+            <br>
+          <!--   <div>
+            <div class="info_div">
+                <p>you don't have an account? <a href="register/reg-form.php">create one!</a></p>
+            </div> -->
+        </div>
+        </form>
+
+    </main>
+            <div class="info_div">
+                <p>you already have an account? <a href="/">LOGIN!</a></p>
+            </div>
+            <br>
+    <footer>
+    </footer>
+
+</body>
+</html>

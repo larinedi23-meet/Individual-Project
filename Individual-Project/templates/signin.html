@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signin</title>
+    <link href="./static/css/style2.css" rel="stylesheet" type="text/css" />
+    <script src="./static/js/js.js"></script>
+
+</head>
+    <form method="post" action="/">
+<!--         <h4>
+        Log in to your account
+        </h4>
+
+        <p >
+        Please fill up your information below to sign in.
+        </p>
+
+        <div>
+            <label>Email address*</label>
+            <div>
+                <input type="email"  name="email" id="emailStr" required>
+            </div>
+        </div>
+
+        Password
+        <div>
+            <label>Password*</label>
+            <div class="input-group">
+                <input type="password"  name="password" minlength="6">
+            </div>
+        </div>
+        
+        <div>
+            </button><input type="submit" value="=>" />
+        </div>
+    </form>
+    <br>
+    <a href="/signup"><button>signup</button></a> -->
+
+
+
+
+
+<body>
+    <header>
+        <h1>welcome to WritingBurst</h1>
+    </header>
+    <main>
+        <form id="login_form" class="form_class" action="login/login-access.php" method="post">
+            <div class="form_div">
+                <label>Login:</label>
+                <input class="field_class" name="email" type="text" id="emailStr" placeholder="please enter your your email" autofocus>
+                <label>Password:</label>
+                <input id="pass" class="field_class" name="password" type="password" placeholder="please enter your password">
+                <input class="submit_class" type="submit" value="ENTER" />
+                <!-- <button class="submit_class" type="submit" form="login_form" onclick="return validarLogin()">ENTER</button> -->
+            </div>
+            <br>
+          <!--   <div>
+            <div class="info_div">
+                <p>you don't have an account? <a href="register/reg-form.php">create one!</a></p>
+            </div> -->
+        </div>
+        </form>
+
+    </main>
+            <div class="info_div">
+                <p>you don't have an account? <a href="/signup">create one!</a></p>
+            </div>
+            <br>
+    <footer>
+<!--         <p>Desenvolvido por <a href="#">JM_Code&trade;</a></p> -->
+    </footer>
+</body>
+
+
+
+</html>

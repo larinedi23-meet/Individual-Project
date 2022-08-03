@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="./static/css/style.css" rel="stylesheet" type="text/css" /> 
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <title>ADD A STORY</title>
+</head>
+<body>
+
+    <center>
+     <div class="navbar-s">
+        <a href=""></a>
+  <a href="/home">HOME</a>
+  <a href="/add_story">ADD A STORY</a>
+      <a href="/my_stories">MY STORIES</a>
+<!--       <a href="NA.html"></a> -->
+      <a href="/signout">LOGOUT</a>
+</div></center>
+
+<center>
+
+    <br><br>
+          <form method="post" action="/add_story">
+
+
+        <div>
+            <label>TITLE</label>
+            <div>
+                <input type="text"  name="title" id="titleStr" required >
+            </div>
+        </div>
+<br>
+         <div>
+            <label>STORY</label>
+            <div>
+                <input type="text"  name="story" id="storyStr" required >
+            </div>
+        </div>
+
+<br>
+
+     <!-- Button -->
+        <div>
+           <!--  <input type="submit"/> -->
+            <input class="submit_class" type="submit" value="ENTER" />
+        </div>
+
+    </form>
+</center>
+    
+</body>
+</html>
